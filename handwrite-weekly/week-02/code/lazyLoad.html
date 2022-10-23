@@ -92,6 +92,31 @@
     });
 
     // 方法二：
+    // let imgs = [...document.querySelectorAll('img')]
+    // let total = imgs.length
+
+    // const lazyLoad = (function () {
+    //   let count = 0
+
+    //   return function () {
+    //     const deletedIndex = []
+    //     imgs.forEach((img, index) => {
+    //       const { top } = img.getBoundingClientRect()
+
+    //       if (top < window.innerHeight) {
+    //         img.src = img.getAttribute('data-src')
+    //         deletedIndex.push(index)
+
+    //         if (++count === total) {
+    //           document.removeEventListener('scroll', lazyLoad)
+    //         }
+    //       }
+    //     })
+    //     imgs = imgs.filter((img, index) => !deletedIndex.includes(index))
+    //   }
+    // })()
+
+    // document.addEventListener('scroll', lazyLoad)
   </script>
 </body>
 

@@ -7,9 +7,9 @@
 - 难度为中低难度的前端算法
 - 场景设计题
 
-本期传送门：[第二期](https://github.com/caosiwei97/code-training/tree/main/handwrite-weekly/week-02)
+本期传送门：[第三期](./handwrite-weekly/week-03/README.md)
 
 ## 往期训练题目与答案
 
-- [第一期](./handwrite-weekly/week-01)
-- [第一期](./handwrite-weekly/week-02)
+- [第一期](./handwrite-weekly/week-01/README.md)
+- [第二期](./handwrite-weekly/week-02/README.md)
