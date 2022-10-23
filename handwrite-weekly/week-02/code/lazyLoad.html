@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <style>
+    .img {
+      width: 220px;
+      height: 220px;
+      background-color: #ccc;
+      margin-bottom: 40px;
+      margin-left: 50px;
+    }
+
+    .pic {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!--将真实的src先放在data-src中-->
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img10.360buyimg.com/n7/jfs/t1/183679/11/2189/143829/6091f5d8E933e7ad1/e3e2001666f2ce7b.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img12.360buyimg.com/n7/jfs/t1/192682/11/617/163213/608b887aEddbbbee3/9570466a90d02f79.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img14.360buyimg.com/n7/jfs/t1/156161/35/18802/268242/60641d96Eca3dee7f/4a32070a19deb4f5.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img10.360buyimg.com/n7/jfs/t1/130179/12/9273/167054/5f5468edE9d4ecd9c/39f7520d9f76b695.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img14.360buyimg.com/n7/jfs/t1/100888/13/13132/105320/5e5533c6Ea8daa487/f95d7ba4da5581c5.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img10.360buyimg.com/n7/jfs/t1/173986/31/8862/291849/6098d6d0E26c55012/c2144f6e074556d2.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img10.360buyimg.com/n7/jfs/t1/110754/4/12605/101916/5ee43244E6fbf9433/c42fb5e3f9558a59.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img10.360buyimg.com/n7/jfs/t1/148370/31/1084/45848/5eedc2eeEfdc2cd46/f3c3a6f0bd7998be.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img10.360buyimg.com/n7/jfs/t1/165930/8/7273/171076/602fd5dfE65a52775/ee27074b7037c020.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img13.360buyimg.com/n7/jfs/t1/190093/28/117/193777/60867822Ea949fbec/6fe51b122d0fdc5a.jpg" />
+    </div>
+    <div class="img">
+      <img class="pic" alt="加载中..."
+        data-src="https://img14.360buyimg.com/n7/jfs/t1/119501/15/6768/115886/5eca6c36Eb3541dc9/2f4534173878a23c.jpg" />
+    </div>
+  </div>
+  <script>
+    // 方法一：https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API
+    // 优点：不管是横向还是纵向滚动都可以用一套代码，而且比较优化，性能较好。
+    let imgs = document.querySelectorAll("img");
+
+    const observer = new IntersectionObserver((entries, self) => {
+      console.log(self);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const { target } = entry;
+          const src = target.dataset.src;
+          target.src = src;
+          target.removeAttribute("data-src");
+
+          self.unobserve(target);
+        }
+      });
+    });
+
+    imgs.forEach((img) => {
+      observer.observe(img);
+    });
+
+    // 方法二：
+  </script>
+</body>
+
+</html>

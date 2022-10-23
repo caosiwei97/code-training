@@ -11,4 +11,5 @@
 
 ## 往期训练题目与答案
 
-- [第一期](https://github.com/caosiwei97/code-training/tree/main/handwrite-weekly/week-01)
+- [第一期](./handwrite-weekly/week-01)
+- [第一期](./handwrite-weekly/week-02)

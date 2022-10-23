@@ -19,6 +19,8 @@ class EventEmitter {
 }
 ```
 
+[答案链接](./code/EventEmitter.js)
+
 ## 2.解析 query 参数
 
 ```javascript
@@ -26,6 +28,8 @@ function parseQueryParams(url) {}
 
 parseQueryParams('http://www.baidu.com?q=foo&bar=baz') // { q: 'foo', bar: 'baz' }
 ```
+
+[答案链接](./code/parseQueryParams.js)
 
 ## 3.图片懒加载
 
@@ -140,6 +144,8 @@ parseQueryParams('http://www.baidu.com?q=foo&bar=baz') // { q: 'foo', bar: 'baz'
 </html>
 ```
 
+[答案链接](./code/lazyLoad.html)
+
 ## 4.Promise 大礼包
 
 - Promise.all
@@ -215,6 +221,8 @@ Promise.race([promise1, promise2]).then((value) => {
 // expected output: "two"
 ```
 
+[答案链接](./code/promise.js)
+
 ## 5.叠词的数量
 
 - 输出叠词的数量
@@ -226,3 +234,5 @@ function getRepititions(str) {}
 
 getRepititions('abcdaaabbccccdddefgaaa') // 4
 ```
+
+[答案链接](./code/getRepititions.js)
