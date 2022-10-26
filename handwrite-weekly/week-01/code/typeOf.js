@@ -3,9 +3,22 @@
  */
 
 function typeOf(obj) {
-  return Object.prototype.toString.call(obj).slice(8, -1).toLowerCase()
+  const result = Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
+  const map = {
+    'number': true,
+    'string': true,
+    'boolean': true,
+    'undefined': true,
+    'symbol': true,
+    'bigint': true,
+    'function': true,
+  }
+
+  return map[result] ? result : 'object'
 }
 
-typeOf([]) // 'array'
-typeOf({}) // 'object'
-typeOf(new Date()) // 'date'
+typeOf([]); // 'object'
+typeOf({}); // 'object'
+typeOf(new Date()); // 'object'
+typeOf(Symbol(1)) // 'symbol'
+typeOf(() => {}); // 'function'
