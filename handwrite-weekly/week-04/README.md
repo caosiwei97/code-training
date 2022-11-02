@@ -48,13 +48,18 @@ console.log(array.some(even))
 - 实现 reduce
 
 ```js
-const array = [1, 2, 3, 4, 5]
+const array1 = [1, 2, 3, 4];
 
-// checks whether an element is even
-const even = (element) => element % 2 === 0
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);
 
-console.log(array.some(even))
-// expected output: true
+console.log(sumWithInitial);
+// expected output: 10
+
 ```
 
 ## 2.实现 compose
