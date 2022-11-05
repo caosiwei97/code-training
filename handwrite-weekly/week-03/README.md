@@ -24,6 +24,8 @@ const debounceSendAjax = debounce(sendAjax, 1000)
 
 document.addEventListener('scroll', debounceSendAjax)
 ```
+[debounce答案链接](./code/debounce.js)
+[throttle答案链接](./code/throttle.js)
 
 ## 2.实现 lazyMan
 
@@ -50,6 +52,7 @@ LazyMan(“Hank”).sleepFirst(5).eat(“supper”)
 // Hi This is Hank!
 // Eat supper
 ```
+[答案链接](./code/lazyMan.js)
 
 ## 3.虚拟 DOM 转真实 DOM
 
@@ -90,6 +93,8 @@ function render(vnode) {}
 // 调用 render 后将元素插入 body 下面
 ```
 
+[答案链接](./code/getRealNode.js)
+
 ## 4.场景设计
 
 下面的场景设计二选一。
@@ -112,6 +117,8 @@ function getProm() {
 }
 Promise.retry(getProm)
 ```
+
+[答案链接](./code/retry.js)
 
 ### 场景二：设计一个截图功能
 
