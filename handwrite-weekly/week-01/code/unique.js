@@ -8,9 +8,8 @@ Array.prototype.uniqueWithSet = function () {
   return [...new Set(this)]
 }
 
-// 方法二：filter+indexOf
+// 方法二：filter+lastIndexOf
 
 Array.prototype.uniqueWithFilter = function () {
-  // includes 也可
-  return this.filter((item, index) => this.indexOf(item) !== index)
+  return this.filter((item, index) => this.lastIndexOf(item) === index)
 }
