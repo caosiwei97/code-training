@@ -7,10 +7,11 @@
 - 难度为中低难度的前端算法
 - 场景设计题
 
-本期传送门：[第四期](./handwrite-weekly/week-04/README.md)
+本期传送门：[第五期](./handwrite-weekly/week-05/README.md)
 
 ## 往期训练题目与答案
 
-- [第一期](./handwrite-weekly/week-01/README.md)
-- [第二期](./handwrite-weekly/week-02/README.md)
+- [第四期](./handwrite-weekly/week-04/README.md)
 - [第三期](./handwrite-weekly/week-03/README.md)
+- [第二期](./handwrite-weekly/week-02/README.md)
+- [第一期](./handwrite-weekly/week-01/README.md)
