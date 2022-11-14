@@ -5,33 +5,39 @@
 ```js
 const array1 = ['a', 'b', 'c']
 
-array1.forEach((element) => console.log(element))
+array1._forEach((element) => console.log(element))
 
 // expected output: "a"
 // expected output: "b"
 // expected output: "c"
 ```
 
+[答案](./code/1.array/forEach.js)
+
 - 实现 map
 
 ```js
 // pass a function to map
-const map1 = array1.map((x) => x * 2)
+const map1 = array1._map((x) => x * 2)
 
 console.log(map1)
 // expected output: Array [2, 8, 18, 32]
 ```
+
+[答案](./code/1.array/map.js)
 
 - 实现 filter
 
 ```js
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
 
-const result = words.filter((word) => word.length > 6)
+const result = words._filter((word) => word.length > 6)
 
 console.log(result)
 // expected output: Array ["exuberant", "destruction", "present"]
 ```
+
+[答案](./code/1.array/filter.js)
 
 - 实现 some
 
@@ -41,26 +47,29 @@ const array = [1, 2, 3, 4, 5]
 // checks whether an element is even
 const even = (element) => element % 2 === 0
 
-console.log(array.some(even))
+console.log(array._some(even))
 // expected output: true
 ```
+
+[答案](./code/1.array/some.js)
 
 - 实现 reduce
 
 ```js
-const array1 = [1, 2, 3, 4];
+const array1 = [1, 2, 3, 4]
 
 // 0 + 1 + 2 + 3 + 4
-const initialValue = 0;
-const sumWithInitial = array1.reduce(
+const initialValue = 0
+const sumWithInitial = array1._reduce(
   (previousValue, currentValue) => previousValue + currentValue,
-  initialValue
-);
+  initialValue,
+)
 
-console.log(sumWithInitial);
+console.log(sumWithInitial)
 // expected output: 10
-
 ```
+
+[答案](./code/1.array/reduce.js)
 
 ## 2.实现 compose
 
@@ -101,6 +110,8 @@ fn()
 //实现compose函数
 function compose(middlewares) {}
 ```
+
+[答案](./code/2.compose/index.js)
 
 ## 3.数组转树
 
@@ -207,6 +218,8 @@ const arr = [
 ]
 ```
 
+[答案](./code/3.toTree/index.js)
+
 ## 4.场景：前端的权限系统怎么实现？
 
 假如某个系统有超级管理员，平台管理员、运营管理、会员、游客等角色，不同的角色进入系统后可以操作的页面不同，包括：
@@ -217,6 +230,9 @@ const arr = [
 
 请问该如何设计？
 
+[答案](./code/4.auth/)
+
 ## 5.算法：无重复字符的最大子串
 
 [leecode 传送门](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+[答案](./code/5.longest-substring/)
