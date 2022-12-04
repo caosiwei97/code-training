@@ -19,6 +19,8 @@ console.log(new Food('cheese', 5).name)
 // expected output: "cheese"
 ```
 
+[答案](./code/call.js)
+
 - apply
 
 ```js
@@ -34,6 +36,8 @@ const min = Math.min.apply(null, numbers)
 console.log(min)
 // expected output: 2
 ```
+
+[答案](./code/apply.js)
 
 - bind
 
@@ -54,6 +58,8 @@ console.log(boundGetX())
 // expected output: 42
 ```
 
+[答案](./code/bind.js)
+
 ## 2.实现函数式编程中的柯里化
 
 ```js
@@ -73,6 +79,8 @@ multi(2, 3)(4)
 // expected output: 24
 ```
 
+[答案](./code/curry.js)
+
 ## 3.正则大礼包
 
 - 实现千位分隔符
@@ -84,11 +92,15 @@ parseToMoney(123456789) // return '123,456,789'
 parseToMoney(1087654.321) // return '1,087,654.321'
 ```
 
+[答案](./code/reg/parseToMoney.js)
+
 - 判断电话号码 (11 位的手机号)
 
 ```js
 function isPhone(tel) {}
 ```
+
+[答案](./code/reg/isPhone.js)
 
 - 判断邮箱
 
@@ -96,14 +108,21 @@ function isPhone(tel) {}
 function isEmail(email) {}
 ```
 
+[答案](./code/reg/isEmal.js)
+
 - 判断身份证
 
 ```js
 function isCardNo(num) {}
 ```
 
+[答案](./code/reg/isCardNo.js)
+
 ## 4.渲染十万条数据，有什么解决方案 ？
+
+后续专题分享。
 
 ## 5.反转链表
 
 [传送门](https://leetcode.cn/problems/reverse-linked-list/)
+[答案](./code/reverseList.js)
