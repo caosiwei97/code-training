@@ -38,10 +38,9 @@ console.log('script end')
 /**
  * Ajax简易封装GET请求
  * @param {string} url 请求地址
- * @param {function} cb 回调函数
  * @return {promise} 返回 promise
  */
-function ajax(url, cb) {}
+function ajax(url) {}
 ```
 
 自己创建 a,b,c 三份 json 数据：
